@@ -44,12 +44,12 @@ botao_decoficar.addEventListener("click", function () {
     for (let i = 0; i < valor.length; i++) {
       if (valor[i].charCodeAt() >= 65 && valor[i].charCodeAt() <= 90) {
         let str = String.fromCharCode(
-          ((valor[i].charCodeAt() - 65 - barr) % 26) + 65
+          ((valor[i].charCodeAt() + 65 - barr) % 26) + 65
         );
         resultado += str;
       } else if (valor[i].charCodeAt() >= 97 && valor[i].charCodeAt() <= 122) {
         let str = String.fromCharCode(
-          ((valor[i].charCodeAt() - 97 - barr) % 26) + 97
+          ((valor[i].charCodeAt() + 97 - barr) % 26) + 97
         );
         resultado += str;
       } else {
