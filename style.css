@@ -1,5 +1,5 @@
 * {
-  font-family: "Calligraffitti", cursive;
+    font-family: 'Germania One', cursive;
   box-sizing: border-box;
 }
 body {
@@ -31,11 +31,6 @@ button {
   cursor: pointer;
   font-size: 30px;
   background: none;
-}
-button:hover {
-  font-size: 45px;
-  text-shadow: 4px 4px 2px greenyellow;
-  box-sizing: border-box;
 }
 main {
   padding: 25px;

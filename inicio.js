@@ -21,6 +21,7 @@ botao_codificar.addEventListener("click", function () {
         );
         resultado += str;
       } else if (valor[i].charCodeAt() >= 97 && valor[i].charCodeAt() <= 122) {
+        console.log(valor[i].charCodeAt())
         let str = String.fromCharCode(
           ((valor[i].charCodeAt() - 97 + barr) % 26) + 97
         );
@@ -44,13 +45,15 @@ botao_decoficar.addEventListener("click", function () {
     for (let i = 0; i < valor.length; i++) {
       if (valor[i].charCodeAt() >= 65 && valor[i].charCodeAt() <= 90) {
         let str = String.fromCharCode(
-          ((valor[i].charCodeAt() + 65 - barr) % 26) + 65
+          ((valor[i].charCodeAt() -90 - barr) % 26) + 90
         );
         resultado += str;
       } else if (valor[i].charCodeAt() >= 97 && valor[i].charCodeAt() <= 122) {
+        console.log(barr)
         let str = String.fromCharCode(
-          ((valor[i].charCodeAt() + 97 - barr) % 26) + 97
+          ((valor[i].charCodeAt() -122 -barr) % 26) + 122
         );
+        console.log(valor[i].charCodeAt())
         resultado += str;
       } else {
         resultado += valor[i];

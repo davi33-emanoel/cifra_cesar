@@ -8,7 +8,7 @@
     <script src="inicio.js" type="text/javascript" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet"> 
     <title>Desafio-Hardcore</title>
 </head>
 <body>
@@ -19,16 +19,36 @@
                 <option value="base64">Base64</option>
                 <option value="cifra">Cifra</option>
             </select>
-            <button id="botao">Codificar</button>
+            <input type="radio" name="codificar" id="botao">Codificar</input>
                 <input id="input_original"  placeholder="codificar texto" type="text" name="text">
                 <input id="input_resultado" placeholder="Texto codificado" type="text" name="text">
-            <button id="botao_segundo">Decodificar</button>
+            <input type="radio" name="codificar" id="botao_segundo">Decodificar</input>
         </div>
         <div id="barra">
-            <input id="barrinha" type="range" value="1" min="1" max="1000" onchange="barras();" >
+            <input id="barrinha" type="range" value="1" min="1" max="500000" onchange="barras();" >
             <output id="output">1</output>
         </div>
         </div>
     </main>
 </body>
 </html>
+<!-- ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⡿⢓⠵⠒⡂⣀⣭⣷⠶⠶⠢⣤⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⢟⡵⣫⢖⣑⠴⠟⠋⠓⠉⣀⢤⣶⡻⣽⠣⠤⢤⡤⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣾⣽⢾⣫⣿⣿⣿⣟⣥⢴⣂⠥⠀⠉⠀⠈⠀⠬⣴⣒⡻⠩⣳⠆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠤⠒⠒⠒⠛⠋⠙⠻⠭⣅⡙⢻⣿⢽⣿⣾⣭⣥⣶⣾⡥⠤⣀⣤⣾⣾⣟⢵⡣⠘⡆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣀⣤⢛⣉⡀⠀⠀⢄⢀⢤⣄⠀⠃⠠⠂⠉⢓⠲⢖⡛⣻⣿⣿⣖⣫⣵⣾⢿⣿⣟⣻⣯⣅⡲⠦⡗⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠸⣴⣼⡸⣾⡞⠀⠀⢈⡟⣳⢸⢀⠐⠂⢀⠁⡄⠠⠀⢨⠓⠶⠲⣞⣿⣭⣿⣿⣷⣲⡶⠶⠶⠶⠄⢸⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠲⢬⣀⣀⠀⠀⠌⠡⣧⠼⠈⠀⠆⠀⢠⠀⠄⠘⠀⠐⠂⠀⠑⠃⢙⡛⢛⣯⣷⣻⢭⣶⣖⣢⣺⠀⢦⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⠿⠿⣿⣿⣿⣿⣷⣶⡀⠀⡠⠀⠁⡄⠀⠀⠀⠀⢙⡾⡵⣯⡙⠻⣿⡷⣯⢽⣓⣒⠘⡄⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣮⠙⡛⠛⠻⠿⣿⣶⣶⠤⢢⡄⠀⠀⠀⠌⢷⣮⣾⣾⢮⠲⡌⠻⣗⢯⣖⣒⢺⠇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡽⡄⡆⢠⠇⠀⢠⠆⡀⢰⢸⣵⡄⠀⡄⠸⡄⠻⣿⣿⣙⣳⡘⢷⣌⠑⠫⠒⣪⠂⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡿⡵⡝⢀⡞⡰⣄⡞⣰⣇⢾⠈⣾⣇⠀⠱⣊⡿⡷⣊⠛⢽⠫⢳⡌⠪⠝⣂⠔⠃⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠔⢫⡾⡞⣠⠊⡰⡻⡸⢱⣿⡜⣸⢻⢸⣿⡄⠰⣧⢿⡽⣿⣧⠀⠙⠢⢝⡺⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⢺⡟⠘⣽⠁⡴⢡⣳⢁⣿⣽⠃⡏⡿⡄⢿⡇⠀⢯⢯⡟⡽⣿⢆⠀⠀⠀⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⣠⠃⡜⢠⢫⢇⢮⢷⢻⠀⡇⢿⢣⠸⡇⠀⣿⣼⢸⢳⢹⢏⠀⢠⠖⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡫⠘⠀⠃⢸⣝⡎⡏⢸⠀⡗⢸⢸⢀⡇⠀⡟⣀⡯⠀⠃⠙⠎⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣃⣀⠀⠀⢇⢿⠀⠇⠌⢠⠃⣘⢸⠸⢇⢠⠚⠁⠀⠧⣀⡠⡊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⡈⡠⠒⢤⡀⣌⠎⠀⠈⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠙⠃⠀⠀⠈⠉⠀⠀⠀ Betta-azul
+Queria agradecer por perder minha sanidade mental nisso (*^‿^*) só agradeço -->
